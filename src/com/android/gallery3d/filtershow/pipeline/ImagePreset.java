@@ -645,6 +645,9 @@ public class ImagePreset {
                     continue;
                 }
                 String sname = filter.getSerializationName();
+                if (sname == null) {
+                    continue;
+                }
                 if (DEBUG) {
                     Log.v(LOGTAG, "Serialization: " + sname);
                     if (sname == null) {
